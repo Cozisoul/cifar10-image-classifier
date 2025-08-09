@@ -21,7 +21,33 @@ This repository contains a complete project for building, training, and deployin
 
 ## How to Run the Application
 
-**1. Clone the Repository**
+**1. Get the Code**
+
+First, get the code by cloning the repository or downloading it as a ZIP file.
+
+**2. Create a Virtual Environment**
+
+It is highly recommended to use a virtual environment to keep your project dependencies isolated.
+
 ```bash
-git clone <your-repo-url-here>
-cd cifar10-classifier
+python -m venv .venv
+source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
+```
+
+**3. Install Dependencies**
+
+Install all the required packages using the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+**4. Run the Application**
+
+Launch the Gradio app by running the following command:
+
+```bash
+python app.py
+```
+
+The application will be available at a local URL (usually `http://127.0.0.1:7860`).
